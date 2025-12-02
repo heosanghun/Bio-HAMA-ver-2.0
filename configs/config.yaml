@@ -1,0 +1,37 @@
+# BioHama 실험 설정 파일
+
+# 기본 설정
+defaults:
+  - model: biohama
+  - task: copy
+
+# 실험 설정
+experiment:
+  name: biohama_poc
+  seed: 42
+  device: cpu  # cpu or cuda
+  
+# 데이터 설정
+data:
+  vocab_size: 100
+  train_size: 10000
+  id_test_size: 1000
+  ood_test_size: 1000
+  hard_test_size: 1000
+  
+# 학습 설정
+training:
+  batch_size: 64
+  num_epochs: 100
+  learning_rate: 0.0001
+  optimizer: adamw
+  scheduler: cosine
+  gradient_clip: 1.0
+  early_stopping_patience: 10
+  
+# 로깅 설정
+logging:
+  use_wandb: false
+  wandb_project: biohama
+  log_dir: logs/
+

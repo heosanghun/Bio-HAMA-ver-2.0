@@ -1,0 +1,12 @@
+# Transformer Baseline 설정
+
+_model_: experiments.baselines.transformer.TransformerModel
+
+vocab_size: 100
+embedding_dim: 128
+num_layers: 4
+num_heads: 4
+hidden_dim: 512
+max_seq_len: 100
+dropout: 0.1
+

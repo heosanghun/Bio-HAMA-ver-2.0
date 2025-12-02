@@ -1,0 +1,10 @@
+# GRU Baseline 설정
+
+_model_: experiments.baselines.gru.GRUModel
+
+vocab_size: 100
+embedding_dim: 128
+hidden_dim: 512
+num_layers: 2
+dropout: 0.1
+

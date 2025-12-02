@@ -1,0 +1,12 @@
+# BioHama 모델 설정
+
+_model_: biohama.biohama_model.BioHamaModel
+
+vocab_size: 100
+embedding_dim: 128
+num_modules: 8
+memory_size: 16
+num_heads: 4
+max_seq_len: 100
+dropout: 0.1
+

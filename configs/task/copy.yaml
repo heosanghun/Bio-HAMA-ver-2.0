@@ -1,0 +1,9 @@
+# Copy Task 설정
+
+_task_: experiments.tasks.generators.CopyTask
+
+vocab_size: 100
+min_length: 5
+max_length: 20
+noise_level: 0.0
+
